@@ -1,1 +1,1 @@
-return "https://gist.githubusercontent.com/kw-roblox/341036296b6598e51becd14c8b6c4a0f/raw/4cfc3621ad7b85a0be5c017c981e47047c532279/Key.lua"
+return "https://gist.githubusercontent.com/kw-roblox/341036296b6598e51becd14c8b6c4a0f/raw/602f74b4bbc296c20ffc5fe5b7db0d105ef20e59/Key.lua"
