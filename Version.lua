@@ -1,4 +1,2 @@
-local current = 3.1
 
-
-return current
+return 3.1
