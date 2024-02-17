@@ -1,6 +1,6 @@
 Users = {
-  obbycreatorasslol,
-  lostaccountkw_roblox,
+  "obbycreatorasslol",
+  "lostaccountkw_roblox",
 }
 
 return Users
