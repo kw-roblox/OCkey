@@ -3,7 +3,8 @@ Users = {
   "lostaccountkw_roblox",
   "Wllac8",
   "nemyheim",
-  "Pae_Epic"
+  "Pae_Epic",
+  "Superbigpizzaboy"
 }
 
 return Users
