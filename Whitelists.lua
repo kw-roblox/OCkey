@@ -5,7 +5,8 @@ Users = {
   "nemyheim",
   "Pae_Epic",
   "Superbigpizzaboy",
-  "2KY_MUZIC"
+  "2KY_MUZIC",
+  "EDINQKGUZ"
 }
 
 return Users
