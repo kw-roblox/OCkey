@@ -1,2 +1,2 @@
 
-return 3.61
+return 3.24
