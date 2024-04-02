@@ -7,7 +7,8 @@ Users = {
   "Superbigpizzaboy",
   "robloxxaker134",
   "EDINQKGUZ",
-  "obbycreatorissus"
+  "obbycreatorissus",
+  "amigoyoulol2"
 }
 
 return Users
