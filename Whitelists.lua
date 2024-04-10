@@ -1,5 +1,5 @@
 Users = {
-  "obbycreatorasslol",
+  "obbycreatorass",
   "lostaccountkw_roblox",
   "Wllac8",
   "nemyheim",
