@@ -1,5 +1,5 @@
 Users = {
-  "obbycreatorass",
+  "obbycreatorasslol",
   "lostaccountkw_roblox",
   "Wllac8",
   "nemyheim",
@@ -14,7 +14,7 @@ Users = {
   "Levent_Ardel",
   "badgeneeded",
   "hahahahanghial",
-  "Coolboy_altfordoggy"
+  "coolboy_altfordoggy"
 }
 
 return Users
