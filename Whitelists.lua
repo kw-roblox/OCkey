@@ -13,7 +13,8 @@ Users = {
   "baconhair_huh4",
   "Levent_Ardel",
   "badgeneeded",
-  "hahahahanghial"
+  "hahahahanghial",
+  "Coolboy_altfordoggy"
 }
 
 return Users
