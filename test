@@ -1,0 +1,73 @@
+local plrr = game.Players.LocalPlayer.Name
+local PL = {
+	"Lava",
+	"Part",
+	"Head",
+	"Spin Part",
+	"Spin Lava",
+	"Ramp",
+	"Torus",
+	"Truss"
+}
+
+local function addpart()
+	local B = math.random(1 , 6)
+	
+	if 2 < B then
+		
+		local Selected = math.random(1, #PL)
+		Selected = PL[Selected]
+		game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer(Selected, workspace.Obbies[plrr].Area.CFrame)
+		
+	end
+end
+
+local function randomizeCFrame(cf)
+	local axes = {"X", "Z"}
+	local axis = axes[math.random(1, #axes)]
+
+	local move = math.random(0, 3)
+	local direction = math.random(0, 1) == 1 and 1 or -1
+	local distance = math.random(2, 20)
+
+	if move > 0 then
+		if axis == "X" then
+			cf = cf * CFrame.new(direction * distance, 0, 0)
+		elseif axis == "Z" then
+			cf = cf * CFrame.new(0, 0, direction * distance)
+		end
+	end
+
+	print(cf)
+	return cf
+end
+
+while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer("Slow Ramp Track", RampPos)
+	game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UpdateButton"):FireServer(workspace.Obbies[plrr].Items.Buttons:WaitForChild("Button"), {
+		[1] = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"]
+	})
+	
+	local RampPos = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"].CFrame
+	
+	task.wait( math.random( 1,  1.5 ) )
+	
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DeleteObject"):InvokeServer({
+		[1] = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"]:WaitForChild("Buttons"),
+		[2] = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"]
+	})
+	
+	task.wait(math.random(0.1, 0.5))
+	
+	RampPos = randomizeCFrame(RampPos)
+	
+	game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer("Slow Ramp Track", RampPos)
+	
+	local track = workspace.Obbies[plrr].Items.Special:FindFirstChild("Slow Ramp Track")
+	
+	if not track then
+		game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer("Slow Ramp Track", RampPos)
+	end
+	
+	addpart()
+end
