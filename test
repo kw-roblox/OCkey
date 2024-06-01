@@ -40,6 +40,8 @@ while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeSe
 	
 	local RampPos = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"].CFrame
 	
+	addpart()
+	
 	task.wait( math.random( 1,  1.5 ) )
 	
 	
@@ -48,7 +50,6 @@ while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeSe
 		[2] = workspace.Obbies[plrr].Items.Special:WaitForChild("Slow Ramp Track")["Slow Ramp Track"]
 	})
 	
-	addpart()
 	
 	task.wait(math.random(0.1, 0.5))
 	
@@ -63,3 +64,4 @@ while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeSe
 		game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer("Slow Ramp Track", RampPos)
 	end
 end
+
