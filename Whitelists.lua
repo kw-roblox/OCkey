@@ -15,6 +15,7 @@ Users = {
   "badgeneeded",
   "hahahahanghial",
   "coolboy_altfordoggy"
+  "brunofabiana22"
 }
 
 return Users
